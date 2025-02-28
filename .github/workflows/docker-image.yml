@@ -28,8 +28,10 @@ jobs:
     - name: Build Docker Image
       run: | 
         docker build -t leonardo1989/docker-graphql:0.0.2 .
+        docker build -t leonardo1989/docker-graphql:latest .
 
     - name: Push Docker Image
       run: | 
         docker push leonardo1989/docker-graphql:0.0.2
+        docker push leonardo1989/docker-graphql:latest
         
